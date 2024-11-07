@@ -6,7 +6,7 @@
 /*   By: knacer <knacer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 09:05:54 by knacer            #+#    #+#             */
-/*   Updated: 2024/11/07 13:23:33 by knacer           ###   ########.fr       */
+/*   Updated: 2024/11/06 17:18:04 by knacer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,17 +32,7 @@ class Fixed
         void setRawBits( int const raw );
         float toFloat( void ) const;
         int toInt( void ) const;
-        friend std::ostream& operator<<(std::ostream& out, const Fixed& number);
-        friend Fixed operator>(const Fixed& num1, const Fixed& num2);
-        friend Fixed operator>=(const Fixed& num1, const Fixed& num2);
-        friend Fixed operator<(const Fixed& num1, const Fixed& num2);
-        friend Fixed operator<=(const Fixed& num1, const Fixed& num2);
-        friend Fixed operator==(const Fixed& num1, const Fixed& num2);
-        friend Fixed operator!=(const Fixed& num1, const Fixed& num2);
-        friend Fixed operator+(const Fixed& num1, const Fixed& num2);
-        friend Fixed operator-(const Fixed& num1, const Fixed& num2);
-        friend Fixed operator*(const Fixed& num1, const Fixed& num2);
-        friend Fixed operator/(const Fixed& num1, const Fixed& num2);
+    friend std::ostream& operator<<(std::ostream& out, const Fixed& number);
 };
 
 #endif

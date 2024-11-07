@@ -6,7 +6,7 @@
 /*   By: knacer <knacer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 09:18:02 by knacer            #+#    #+#             */
-/*   Updated: 2024/11/07 13:52:08 by knacer           ###   ########.fr       */
+/*   Updated: 2024/11/07 10:11:04 by knacer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,54 +78,4 @@ std::ostream& operator<<(std::ostream& out, const Fixed& number)
 {
     out << number.toFloat();
     return(out);
-}
-
-Fixed operator>(const Fixed& num1, const Fixed& num2)
-{
-    return(Fixed(num1.fixed_point > num2.fixed_point));    
-}
-
-Fixed operator>=(const Fixed& num1, const Fixed& num2)
-{
-    return(Fixed(num1.fixed_point >= num2.fixed_point));    
-}
-
-Fixed operator<(const Fixed& num1, const Fixed& num2)
-{
-    return(Fixed(num1.fixed_point < num2.fixed_point));    
-}
-
-Fixed operator<=(const Fixed& num1, const Fixed& num2)
-{
-    return(Fixed(num1.fixed_point <= num2.fixed_point));    
-}
-
-Fixed operator==(const Fixed& num1, const Fixed& num2)
-{
-    return(Fixed(num1.fixed_point == num2.fixed_point));    
-}
-
-Fixed operator!=(const Fixed& num1, const Fixed& num2)
-{
-    return(Fixed(num1.fixed_point != num2.fixed_point));    
-}
-
-Fixed operator+(const Fixed& num1, const Fixed& num2)
-{
-    return(Fixed(num1.fixed_point + num2.fixed_point));    
-}
-
-Fixed operator-(const Fixed& num1, const Fixed& num2)
-{
-    return(Fixed(num1.fixed_point - num2.fixed_point));    
-}
-
-Fixed operator*(const Fixed& num1, const Fixed& num2)
-{
-    return(Fixed(num1.fixed_point * num2.fixed_point));    
-}
-
-Fixed operator/(const Fixed& num1, const Fixed& num2)
-{
-    return(Fixed(num1.fixed_point / num2.fixed_point));    
 }
