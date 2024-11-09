@@ -6,7 +6,7 @@
 /*   By: knacer <knacer@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 09:05:54 by knacer            #+#    #+#             */
-/*   Updated: 2024/11/07 13:23:33 by knacer           ###   ########.fr       */
+/*   Updated: 2024/11/09 14:10:51 by knacer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ class Fixed
         static const Fixed& min(const Fixed& num1, const Fixed& num2);
         static Fixed& max(Fixed& num1, Fixed& num2);
         static const Fixed& max(const Fixed& num1, const Fixed& num2);
-        friend std::ostream& operator<<(std::ostream& out, const Fixed& number);
 };
+    std::ostream& operator<<(std::ostream& out, const Fixed& number);
 
 #endif
